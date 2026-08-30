@@ -1,6 +1,6 @@
 import {brand} from './brand.mjs';
 import {options, defaults, normalize, describe, orderHash, restoreOrder} from './customization.mjs';
-import { sceneArt, photoCup } from './visuals.mjs';
+import { sceneArt, photoCup } from './visuals.mjs?v=5';
 import { orderState, ORDER_DURATION } from './timeline.mjs';
 const $ = selector => document.querySelector(selector);
 const drinks = [
@@ -39,7 +39,7 @@ function renderRecipe(config){
  $('#ready-cup').innerHTML=photoCup('latte',config,true);
  $('#recipe-preview').textContent='1 drink · Made for Jayasri';
  $('#receipt-description').textContent=summary;$('#ready-description').textContent=summary;
- $('#preparation-summary').textContent=`Espresso, ${options.milk[config.milk].toLowerCase()}, ${options.ice[config.ice].toLowerCase()}.`;
+ $('#preparation-summary').textContent=`${options.ice[config.ice]}, espresso, then ${options.milk[config.milk].toLowerCase()}.`;
  $('.nutrition').setAttribute('aria-label','Nutrition pending café recipe data');
  $('.nutrition').innerHTML=[['—','calories'],['—','total sugar'],['—','total fat']].map(([value,label])=>`<div><strong>${value}</strong><span>${label}</span></div>`).join('');
  $('.nutrition-note').textContent='Concept preview · Your café’s verified recipe nutrition will appear here. No nutritional values are claimed for this sample drink.';
@@ -50,7 +50,7 @@ function renderRecipe(config){
 function recipeStory(phase,config){
  if(phase.kind==='brew')return {title:'Your espresso. Freshly poured.',text:`Your turn, Jayasri. ${options.shots[config.shots]} flow into your ${config.size} cup. A rich beginning, made your way.`,footnote:'Illustrated preparation · Your selected espresso strength.'};
  if(phase.kind==='milk')return {title:`A swirl of ${options.milk[config.milk].toLowerCase()}.`,text:`Cold ${options.milk[config.milk].toLowerCase()} folds through the espresso.${config.sweet==='none'?' No added syrup.':` ${options.sweet[config.sweet]} adds your chosen sweetness.`}`,footnote:'Your selected milk · No store-specific supplier is claimed.'};
- if(phase.kind==='ice')return {title:config.ice==='none'?'No ice. Just your way.':config.ice==='light'?'A little ice. A gentle chill.':'A little chill. A final swirl.',text:config.ice==='none'?'Skipping the ice, just as you asked. Your cold latte gets a moment to settle before the lid.':`${config.ice==='light'?'Fewer cubes':'Ice cubes'} tumble into the cup. Your latte is almost ready for its first sip.`,footnote:'Your recipe · '+options.ice[config.ice]};
+ if(phase.kind==='ice')return {label:config.ice==='none'?'NOW PREPARING · YOUR OPEN CUP':phase.label,title:config.ice==='none'?'No ice. Just your way.':config.ice==='light'?'A little ice. A gentle chill.':'First, a little chill.',text:config.ice==='none'?'Skipping the ice, just as you asked. Your open cup is ready for espresso, then cold milk.':`${config.ice==='light'?'Fewer cubes':'Ice cubes'} tumble into the open cup first. Espresso comes next, followed by cold milk.`,footnote:'Your recipe · '+options.ice[config.ice]};
  return phase;
 }
 renderMenu();
@@ -124,6 +124,7 @@ function renderPhase(state){
  $('#stage').style.setProperty('--elapsed',`${Math.max(0,state.elapsed-p.at)}s`);
  $('#scene-label').textContent=p.label;$('#scene-footnote').textContent=p.footnote;
  const story=recipeStory(p,orderConfig);
+ if(story.label)$('#scene-label').textContent=story.label;
  $('#story-title').textContent=story.title;$('#story-caption').textContent=story.text;
  if(story.footnote)$('#scene-footnote').textContent=story.footnote;
  $('#story-part').textContent=state.index<3?'A STORY WHILE YOU WAIT':'YOUR LATTE IS TAKING SHAPE';

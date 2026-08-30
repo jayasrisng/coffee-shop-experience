@@ -7,7 +7,7 @@
     "title": "A little journey, before your first sip.",
     "label": "ORIGIN STORY · COLOMBIA",
     "footnote": "Illustrated Colombia stop, not a verified origin of your cup.",
-    "text": "Jayasri, three orders ahead. Follow the coffee guide to an illustrated Colombian coffee hillside."
+    "text": "Jayasri, three orders ahead. Travel to an illustrated Colombian coffee hillside."
   },
   {
     "at": 10,
@@ -17,7 +17,7 @@
     "title": "Picked with a little patience.",
     "label": "THE HARVEST",
     "footnote": "Illustrated harvest · This happened before your order.",
-    "text": "Ripe coffee cherries leave the branch, one by one. Inside each fruit are the seeds we call coffee beans."
+    "text": "Ripe coffee cherries fill the basket, one by one. Inside each fruit are the seeds we call coffee beans."
   },
   {
     "at": 20,
@@ -31,7 +31,17 @@
   },
   {
     "at": 30,
-    "until": 39,
+    "until": 35,
+    "queue": 0,
+    "kind": "ice",
+    "title": "First, a little chill.",
+    "label": "NOW PREPARING · ADDING ICE",
+    "footnote": "Ice first · Espresso next · Cold milk to finish.",
+    "text": "Ice tumbles into your open cup first. Next comes the espresso, then cold milk."
+  },
+  {
+    "at": 35,
+    "until": 44,
     "queue": 0,
     "kind": "brew",
     "title": "They’re making your latte now.",
@@ -40,8 +50,8 @@
     "text": "Your turn, Jayasri. The beans are ground, and two shots of espresso flow into your cup. Your latte begins."
   },
   {
-    "at": 39,
-    "until": 47,
+    "at": 44,
+    "until": 54,
     "queue": 0,
     "kind": "milk",
     "title": "A soft swirl of milk.",
@@ -50,17 +60,7 @@
     "text": "Cold 2% milk meets the espresso. Ivory ribbons curl into caramel-colored swirls. Your iced latte is taking shape."
   },
   {
-    "at": 47,
-    "until": 53,
-    "queue": 0,
-    "kind": "ice",
-    "title": "A little chill. A final swirl.",
-    "label": "NOW PREPARING · ADDING ICE",
-    "footnote": "Coffee, milk, and ice. The standard recipe, simply illustrated.",
-    "text": "In goes the ice. A gentle swirl, a little chill. Your latte is nearly ready."
-  },
-  {
-    "at": 53,
+    "at": 54,
     "until": 60,
     "queue": 0,
     "kind": "lid",
