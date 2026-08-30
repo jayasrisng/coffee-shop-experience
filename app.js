@@ -1,6 +1,6 @@
 import {brand} from './brand.mjs';
 import {options, defaults, normalize, describe, orderHash, restoreOrder} from './customization.mjs';
-import { sceneArt, photoCup } from './visuals.mjs?v=5';
+import { sceneArt, photoCup } from './visuals.mjs?v=6';
 import { orderState, ORDER_DURATION } from './timeline.mjs';
 const $ = selector => document.querySelector(selector);
 const drinks = [

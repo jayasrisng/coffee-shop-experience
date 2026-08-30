@@ -5,13 +5,13 @@ import { orderState } from './timeline.mjs';
 const phases=JSON.parse(readFileSync(new URL('./timeline.json',import.meta.url),'utf8'));
 const start=1750000000000;
 test('queue advances 3 → 2 → 1 before preparation starts',()=>{
- for(const [seconds,queue,kind] of [[0,3,'welcome'],[9.99,3,'welcome'],[10,2,'origins'],[19.99,2,'origins'],[20,1,'roast'],[29.99,1,'roast'],[30,0,'ice']]){
+ for(const [seconds,queue,kind] of [[0,3,'welcome'],[9.99,3,'welcome'],[10,2,'origins'],[19.99,2,'origins'],[20,1,'grind'],[29.99,1,'grind'],[30,0,'ice']]){
   const state=orderState(phases,start,start+seconds*1000);
   assert.equal(state.phase.queue,queue);assert.equal(state.phase.kind,kind);assert.equal(state.ready,false);
  }
 });
-test('ice, espresso, milk, and lid precede automatic pickup at exactly sixty seconds',()=>{
- for(const [seconds,kind] of [[30,'ice'],[35,'brew'],[44,'milk'],[54,'lid'],[59.999,'lid'],[60,'ready']]){
+test('ice, espresso, milk, and final check precede automatic pickup at exactly sixty seconds',()=>{
+ for(const [seconds,kind] of [[30,'ice'],[35,'brew'],[44,'milk'],[54,'finish'],[59.999,'finish'],[60,'ready']]){
   const state=orderState(phases,start,start+seconds*1000);assert.equal(state.phase.kind,kind);assert.equal(state.ready,seconds>=60);
  }
 });

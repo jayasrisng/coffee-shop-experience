@@ -15,7 +15,7 @@ A customizable café ordering concept by [Jayasri](https://github.com/jayasrisng
 These are captures of the working browser prototype, including its live countdown and automatic pickup transition.
 
 <p align="center">
-  <img src="docs/portfolio/order-walkthrough.gif" width="340" alt="Animated walkthrough: order, coffee harvest, roasting, ice, espresso, milk, lid, and pickup for Jayasri">
+  <img src="docs/portfolio/order-walkthrough.gif" width="340" alt="Animated walkthrough: order, coffee harvest, grinding, ice, espresso, milk, and pickup for Jayasri">
 </p>
 
 The GIF plays at **2× speed**. [Download the full walkthrough video](docs/portfolio/order-walkthrough.mp4) to see the one-minute order in real time. Both are silent screen captures; the product artwork inside the app is generated concept imagery.
@@ -49,7 +49,7 @@ Trust is the ambition, not a result I am claiming to have measured. A beautiful 
 1. **Start with a familiar menu.** The customer browses drinks and chooses an Iced Latte.
 2. **Make it personal.** Choose cup size, milk, espresso shots, vanilla sweetness, and ice. The demo order is made for Jayasri.
 3. **Order once.** A one-minute simulation starts automatically. No “Next” or “Mark ready” buttons.
-4. **Follow the story.** A portrait 4:5 animation moves through an illustrated coffee harvest, roasting, ice, espresso, milk, and the final lid.
+4. **Follow the story.** A portrait 4:5 animation moves through an illustrated coffee harvest, grinding, ice, espresso, milk, and a final cup check.
 5. **Pick up your moment.** The finished cup appears with the customer’s name, order details, and a space for the café’s verified nutrition information.
 
 The experience is silent, with readable text over the animation. A reduced-motion control and the device’s motion preference are respected. Looking at ingredients does not pause the order.
@@ -86,7 +86,7 @@ I kept the runtime small so the experience is easy to run, inspect, and adapt.
 | Vanilla JavaScript with ES modules | Menu interactions, recipe state, branding preview, and automatic order progression |
 | JSON | The sequence of story phases, timing boundaries, and written captions |
 | SVG | The original logo, product decals, liquid masks, and layered preparation visuals |
-| Built-in image generation | Cup cutouts, a transparent plastic cup shell, metal pitcher, menu products, and café/farm scenes |
+| Built-in image generation | Cup cutouts, a masked plastic cup shell, metal pitcher, menu products, and café/farm scenes |
 | Codex in-app browser tools | Visual review, mobile/desktop checks, and order-flow verification |
 | FFmpeg | Encoding actual browser screenshots into a GIF and a shareable MP4 |
 | Node.js built-in test runner | Timeline boundaries, recipe validation, and order restoration tests |
@@ -109,16 +109,16 @@ This keeps the simulation aligned if callbacks are delayed or the customer retur
 | --- | --- |
 | 0–10 seconds | Three orders ahead; an illustrated Colombian coffee hillside |
 | 10–20 seconds | Two orders ahead; ripe coffee cherries travel toward a basket |
-| 20–30 seconds | One order ahead; the journey from processed seeds to roasted beans |
+| 20–30 seconds | One order ahead; roasted beans in a grinder and grounds ready for espresso |
 | 30–35 seconds | Preparation begins; ice goes into the open cup (or is skipped) |
 | 35–44 seconds | The selected espresso shots pour over the ice |
 | 44–54 seconds | Selected cold milk and optional vanilla sweetness |
-| 54–60 seconds | The lid and final cup reveal |
+| 54–60 seconds | Full cup and final check before pickup |
 | 60 seconds | Automatic pickup screen |
 
 ### Layered visuals that respond to the order
 
-The story combines generated background plates with photorealistic cherry and bean cutouts, a harvest basket that fills, and a photographic clear-plastic cup. In `pouring.mjs`, SVG clipping masks reveal the liquid inside the cup as it fills. A photographic stainless-steel pitcher pours espresso or milk, while CSS animates liquid blending, ice, and the lid. Transparent reflection layers keep the cup visible throughout preparation. This is a composited product animation, not a physically simulated 3D fluid or footage from a real café.
+The story combines generated background plates with photorealistic coffee cherries, a harvest basket that fills, a realistic grinder with beans in its hopper, and a photographic clear-plastic cup. In `pouring.mjs`, SVG clipping masks reveal the liquid inside the cup as it fills. A photographic stainless-steel pitcher pours espresso or milk, while CSS animates liquid blending and ice. Reflection layers keep the cup visible throughout preparation. The liquid reaches close to the rim, leaving a small gap. A final cup check replaces the earlier falling-lid effect. This is a composited product animation, not a physically simulated 3D fluid or footage from a real café.
 
 Preparation visuals respond to the selected recipe. Photorealistic generated cups also appear in the menu, receipt, and pickup, including a separate no-ice cutout.
 

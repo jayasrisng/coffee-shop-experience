@@ -23,11 +23,11 @@
     "at": 20,
     "until": 30,
     "queue": 1,
-    "kind": "roast",
-    "title": "From cherry to something rich.",
-    "label": "FROM HARVEST TO ROAST",
-    "footnote": "Illustrated roasting · Your café’s verified sourcing story goes here.",
-    "text": "The seeds are processed, dried, then roasted before reaching the café. One order ahead. Your turn is close."
+    "kind": "grind",
+    "title": "Roasted beans. A fresh grind.",
+    "label": "FROM ROASTED BEANS TO GROUNDS",
+    "footnote": "Illustrated process · Your café’s verified roast and recipe go here.",
+    "text": "After processing and roasting, whole beans go into a grinder. The fine grounds are used to brew espresso. One order ahead."
   },
   {
     "at": 30,
@@ -63,11 +63,11 @@
     "at": 54,
     "until": 60,
     "queue": 0,
-    "kind": "lid",
-    "title": "The finishing touch, just for you.",
+    "kind": "finish",
+    "title": "Made your way, Jayasri.",
     "label": "NOW PREPARING · FINISHING YOUR CUP",
-    "footnote": "Adding the lid and setting your cup on the pickup counter.",
-    "text": "The lid settles into place. Your name goes on the cup. One final touch, made for Jayasri."
+    "footnote": "Final check · Your pickup screen is coming next.",
+    "text": "Your cup is full, with a little room at the rim. A final check, then it is off to the pickup counter."
   },
   {
     "at": 60,

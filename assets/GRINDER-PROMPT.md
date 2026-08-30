@@ -1,0 +1,5 @@
+# Grinder scene
+
+Generated concept artwork using the built-in image-generation tool. Saved as `coffee-grinder.png`; not footage or verified equipment from a café.
+
+Use case: photorealistic-natural. A realistic specialty cafe espresso grinder on a warm cream stone countertop, portrait 4:5 composition. Black and brushed stainless steel commercial burr grinder with a clear hopper naturally FULL of small roasted coffee beans, each about 1cm, densely piled inside the hopper, NOT floating. A stainless portafilter with black handle is locked in the fork below the dispensing chute, receiving a modest mound of fine ground coffee. Grinder occupies lower 65% of the picture, hopper begins at 38% image height, portafilter at 78% image height, whole appliance fits in frame. Upper 33% is a softly blurred dark warm brown cafe wall with generous quiet space for captions. Golden natural side lighting, photographic detail, credible real barista equipment and proportions. No plates, bowls, oversized beans, airborne whole beans, steam, hands, text, logos, watermark. Editorial product photograph, not cartoon or illustration. Match a yellow/brown elegant coffee shop website.
