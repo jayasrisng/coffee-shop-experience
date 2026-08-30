@@ -1,0 +1,82 @@
+[
+  {
+    "at": 0,
+    "until": 10,
+    "queue": 3,
+    "kind": "welcome",
+    "title": "A little journey, before your first sip.",
+    "label": "ORIGIN STORY · COLOMBIA",
+    "footnote": "Illustrated Colombia stop, not a verified origin of your cup.",
+    "text": "Jayasri, three orders ahead. Follow the coffee guide to an illustrated Colombian coffee hillside."
+  },
+  {
+    "at": 10,
+    "until": 20,
+    "queue": 2,
+    "kind": "origins",
+    "title": "Picked with a little patience.",
+    "label": "THE HARVEST",
+    "footnote": "Illustrated harvest · This happened before your order.",
+    "text": "Ripe coffee cherries leave the branch, one by one. Inside each fruit are the seeds we call coffee beans."
+  },
+  {
+    "at": 20,
+    "until": 30,
+    "queue": 1,
+    "kind": "roast",
+    "title": "From cherry to something rich.",
+    "label": "FROM HARVEST TO ROAST",
+    "footnote": "Illustrated roasting · Your café’s verified sourcing story goes here.",
+    "text": "The seeds are processed, dried, then roasted before reaching the café. One order ahead. Your turn is close."
+  },
+  {
+    "at": 30,
+    "until": 39,
+    "queue": 0,
+    "kind": "brew",
+    "title": "They’re making your latte now.",
+    "label": "NOW PREPARING · BREWING ESPRESSO",
+    "footnote": "Simulated preparation · two espresso shots.",
+    "text": "Your turn, Jayasri. The beans are ground, and two shots of espresso flow into your cup. Your latte begins."
+  },
+  {
+    "at": 39,
+    "until": 47,
+    "queue": 0,
+    "kind": "milk",
+    "title": "A soft swirl of milk.",
+    "label": "NOW PREPARING · POURING MILK",
+    "footnote": "Cold 2% milk. No steamed milk, mocha sauce, or whipped cream.",
+    "text": "Cold 2% milk meets the espresso. Ivory ribbons curl into caramel-colored swirls. Your iced latte is taking shape."
+  },
+  {
+    "at": 47,
+    "until": 53,
+    "queue": 0,
+    "kind": "ice",
+    "title": "A little chill. A final swirl.",
+    "label": "NOW PREPARING · ADDING ICE",
+    "footnote": "Coffee, milk, and ice. The standard recipe, simply illustrated.",
+    "text": "In goes the ice. A gentle swirl, a little chill. Your latte is nearly ready."
+  },
+  {
+    "at": 53,
+    "until": 60,
+    "queue": 0,
+    "kind": "lid",
+    "title": "The finishing touch, just for you.",
+    "label": "NOW PREPARING · FINISHING YOUR CUP",
+    "footnote": "Adding the lid and setting your cup on the pickup counter.",
+    "text": "The lid settles into place. Your name goes on the cup. One final touch, made for Jayasri."
+  },
+  {
+    "at": 60,
+    "until": 69,
+    "queue": 0,
+    "kind": "ready",
+    "title": "Voilà, Jayasri. Your order is ready.",
+    "label": "READY FOR PICKUP",
+    "footnote": "Demo order #104 · Jayasri · Iced Latte",
+    "text": "Voilà, Jayasri. Your iced latte is ready to pick up. Your finished cup and its nutrition are right here."
+  }
+]

@@ -1,0 +1,19 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+coverage/
+*.log
+.codex/
+.agents/
+tmp/
+# Superseded background and early art-direction notes; not used by the app.
+assets/espresso-bar.png
+assets/POLISH-PROMPTS.md
