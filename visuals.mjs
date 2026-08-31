@@ -1,4 +1,4 @@
-import {realCup,realPour} from './pouring.mjs?v=6';
+import {realCup,realPour} from './pouring.mjs?v=7';
 export function photoCup(type='latte',config=defaults,name=false){
  const photo=type==='latte';
  return `<div class="photo-cup ${photo?'single-photo':'menu-sprite sprite-'+type}" data-ice="${config.ice}">${photo?`<img class="cup-photograph" src="assets/${config.ice==='none'?'latte-noice-photo':'latte-photo'}.png" alt="">`:''}<img class="cup-decal" src="assets/coffee-shop-mark.svg" alt="">${name?'<span class="photo-name">Jayasri</span>':''}</div>`;

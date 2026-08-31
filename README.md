@@ -12,6 +12,8 @@ A customizable café ordering concept by [Jayasri](https://github.com/jayasrisng
 
 ## Watch the experience
 
+Open `showcase.html` for a portfolio gallery with the video, GIF, and downloadable screenshots.
+
 These are captures of the working browser prototype, including its live countdown and automatic pickup transition.
 
 <p align="center">
@@ -50,7 +52,7 @@ Trust is the ambition, not a result I am claiming to have measured. A beautiful 
 2. **Make it personal.** Choose cup size, milk, espresso shots, vanilla sweetness, and ice. The demo order is made for Jayasri.
 3. **Order once.** A one-minute simulation starts automatically. No “Next” or “Mark ready” buttons.
 4. **Follow the story.** A portrait 4:5 animation moves through an illustrated coffee harvest, grinding, ice, espresso, milk, and a final cup check.
-5. **Pick up your moment.** The finished cup appears with the customer’s name, order details, and a space for the café’s verified nutrition information.
+5. **Pick up your moment.** The finished cup appears with the customer’s name, order details, and clearly labeled fictional sample nutrition.
 
 The experience is silent, with readable text over the animation. A reduced-motion control and the device’s motion preference are respected. Looking at ingredients does not pause the order.
 
@@ -170,7 +172,7 @@ For a client version, start with `brand.mjs`, replace the logo and decal with ap
 ## Honest boundaries and next steps
 
 - **Origin:** Colombia is an illustrated example, not a verified origin for this cup. Harvesting and roasting happen before a real order.
-- **Nutrition:** Values are intentionally blank until the café supplies verified recipe-specific data. No other brand’s nutritional figures are reused.
+- **Nutrition:** 180 calories, 12 g sugar, and 7 g fat are explicitly fictional design samples. They are fixed examples, not calculated from customization choices. A café must replace them with verified recipe-specific data before launch.
 - **Readiness:** The timer is a simulation. A real order system must determine when a drink is actually ready.
 - **Business integration:** There are no payments, prices, authentication, live inventory, or store connections.
 - **Before launch:** Add the client’s approved branding and content, verified ingredients/allergens/nutrition, order-system integration, accessibility and device testing, privacy/security review, and hosting.

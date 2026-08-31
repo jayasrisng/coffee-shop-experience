@@ -17,3 +17,6 @@ tmp/
 # Superseded background and early art-direction notes; not used by the app.
 assets/espresso-bar.png
 assets/POLISH-PROMPTS.md
+
+# Local deployment link metadata
+.vercel/

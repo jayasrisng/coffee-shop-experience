@@ -1,6 +1,6 @@
 import {brand} from './brand.mjs';
 import {options, defaults, normalize, describe, orderHash, restoreOrder} from './customization.mjs';
-import { sceneArt, photoCup } from './visuals.mjs?v=6';
+import { sceneArt, photoCup } from './visuals.mjs?v=7';
 import { orderState, ORDER_DURATION } from './timeline.mjs';
 const $ = selector => document.querySelector(selector);
 const drinks = [
@@ -40,9 +40,9 @@ function renderRecipe(config){
  $('#recipe-preview').textContent='1 drink · Made for Jayasri';
  $('#receipt-description').textContent=summary;$('#ready-description').textContent=summary;
  $('#preparation-summary').textContent=`${options.ice[config.ice]}, espresso, then ${options.milk[config.milk].toLowerCase()}.`;
- $('.nutrition').setAttribute('aria-label','Nutrition pending café recipe data');
- $('.nutrition').innerHTML=[['—','calories'],['—','total sugar'],['—','total fat']].map(([value,label])=>`<div><strong>${value}</strong><span>${label}</span></div>`).join('');
- $('.nutrition-note').textContent='Concept preview · Your café’s verified recipe nutrition will appear here. No nutritional values are claimed for this sample drink.';
+ $('.nutrition').setAttribute('aria-label','Fictional sample nutrition, not recipe data');
+ $('.nutrition').innerHTML=[['180','calories'],['12 g','total sugar'],['7 g','total fat']].map(([value,label])=>`<div><strong>${value}</strong><span>${label}</span></div>`).join('');
+ $('.nutrition-note').textContent='Fictional demo values · Not calculated from your recipe. Your café supplies verified nutrition.';
  $('.dialog-sub').textContent=summary;
  $('.ingredients-list').innerHTML=`<div><dt>${options.shots[config.shots]}</dt><dd>Coffee origin and roast will be supplied by each café. Our Colombian hillside is an illustrative coffee-growing stop, not a verified origin for this cup.</dd></div><div><dt>${options.milk[config.milk]}</dt><dd>Served cold. Exact ingredients and suppliers vary by market; consult the store’s packaging for the selected milk. No store-specific farm is verified in this demo.</dd></div>${config.ice==='none'?'':`<div><dt>${options.ice[config.ice]}</dt><dd>Water, frozen.</dd></div>`}${config.sweet==='none'?'':`<div><dt>${options.sweet[config.sweet]}</dt><dd>Vanilla syrup is an added ingredient. Your café will supply the syrup ingredients and recipe nutrition.</dd></div>`}`;
  $('.allergy strong').textContent=['dairy','whole'].includes(config.milk)?'Contains dairy':config.milk==='almond'?'Contains almonds · Check local allergen information':'Check oatmilk ingredients and local allergen information';

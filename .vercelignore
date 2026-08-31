@@ -1,0 +1,11 @@
+.git
+.codex
+.agents
+.env*
+*.test.mjs
+README.md
+assets/*PROMPT*.md
+assets/espresso-bar.png
+assets/roasted-coffee-bean.png
+docs/*.md
+docs/portfolio/*.md

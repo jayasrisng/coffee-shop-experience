@@ -4,7 +4,7 @@ Captured from the working Coffee Shop Experience prototype on August 30, 2026. A
 
 | File | Use |
 | --- | --- |
-| `order-walkthrough.mp4` | Silent 390 × 980 video, approximately 66 seconds, real-time playback |
+| `order-walkthrough.mp4` | Silent 390 × 980 video, approximately 67 seconds, real-time playback |
 | `order-walkthrough.gif` | Silent looping preview, 320 pixels wide, 2× playback speed |
 | `mobile-menu.png` | Mobile menu, 390 × 980 |
 | `harvest.png` | Harvest story and basket filled with coffee cherries |
@@ -12,7 +12,7 @@ Captured from the working Coffee Shop Experience prototype on August 30, 2026. A
 | `ice-first.png` | Ice in the open cup before espresso |
 | `full-cup.png` | Full small cup with light ice, after pouring; no falling lid |
 | `milk-pour.png` | Milk being added after ice and espresso |
-| `mobile-pickup.png` | Personalized pickup and nutrition placeholders |
+| `mobile-pickup.png` | Personalized pickup and fictional sample nutrition |
 | `desktop-menu.png` | Menu at the default 805 × 771 browser viewport |
 | `desktop-pickup.png` | Pickup at the default browser viewport |
 | `brand-preview.png` | Café branding preview dialog |
@@ -25,4 +25,6 @@ The animation stage itself has a 4:5 aspect ratio. Full interface captures are t
 
 **Coffee Shop Experience — turning wait time into connection.** I designed and built a customizable café concept where one order starts a silent ingredient story, an automatic queue, and a personalized pickup moment. Built with HTML, CSS, JavaScript ES modules, SVG compositing, and generated product artwork, with Codex as my coding collaborator. The concept explores how cafés could use waiting time to share verified sourcing and ingredient information; it does not claim to prove trust or food safety.
 
-Only the Iced Latte has a complete ordering flow. This is a simulated prototype with no payments, real orders, or live tracking. Nutrition remains blank until a café provides verified recipe data.
+Only the Iced Latte has a complete ordering flow. This is a simulated prototype with no payments, real orders, or live tracking. Nutrition shows fictional design samples (180 calories, 12 g sugar, 7 g fat), not calculated recipe values.
+
+The latest capture includes clearly labeled fictional sample nutrition: 180 calories, 12 g sugar, and 7 g fat. The values are fixed design examples, not recipe calculations. The public gallery is served by `showcase.html`.

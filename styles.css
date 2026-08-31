@@ -68,3 +68,5 @@ select{font:inherit;color:inherit}button:focus-visible,select:focus-visible{outl
 
 /* Full cup with a small rim gap; no falling lid or floating whole beans. */
 .milk-surface.arriving{animation:milk-meniscus 8.5s ease both;animation-delay:calc(0s - var(--elapsed,0s))}@keyframes milk-meniscus{0%,80%{opacity:0}100%{opacity:1}}.grinder-backdrop{animation:grinder-push 10s ease-out both!important;animation-delay:calc(0s - var(--elapsed,0s))!important;transform-origin:50% 65%}@keyframes grinder-push{from{transform:scale(1)}to{transform:scale(1.045)}}.scene[data-kind=grind] .process-label{bottom:9%;background:#281b12cf;border:1px solid #efcf8955;border-radius:8px;padding:2cqw;z-index:2}.reduce-motion .grinder-backdrop{animation:none!important}.reduce-motion .milk-surface.arriving{animation:none;opacity:1}@media(prefers-reduced-motion:reduce){.grinder-backdrop{animation:none!important}.milk-surface.arriving{animation:none;opacity:1}}
+
+.sample-nutrition-label{font-size:8px;letter-spacing:1.4px;font-weight:650;color:#8c6928;margin:20px 0 10px}.sample-nutrition-label+.nutrition{margin-top:0}
